@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validate Class Room Name</title>
+</head>
+<body>
+    <script>
+        function isClassRoomName(str) {
+            let regexp = /^[ACP][0-9]{4}[GHIKLM]$/;
+            return regexp.test(str);
+        }
+
+        console.log(isClassRoomName("C0318G"));
+        console.log(isClassRoomName("M0318G"));
+        console.log(isClassRoomName("P0323A"));
+    </script>
+</body>
+</html>
